@@ -1,0 +1,108 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101020;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 25px 10px;
+  background: linear-gradient(135deg, #5415a8, #0759c7);
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 16px 8px;
+  background: #19192e;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 45px 15px;
+  background: linear-gradient(135deg, #241044, #102b5c);
+}
+
+.hero h2 {
+  font-size: 30px;
+}
+
+.play, button {
+  display: inline-block;
+  border: none;
+  border-radius: 9px;
+  background: #8b5cf6;
+  color: white;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main, #about {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.game {
+  background: #202039;
+  border: 1px solid #39395b;
+  border-radius: 14px;
+  padding: 22px 15px;
+}
+
+.emoji {
+  font-size: 48px;
+}
+
+.game p {
+  color: #d0d0e0;
+}
+
+button:hover, .play:hover {
+  background: #6d3de0;
+}
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a78bfa;
+}
+
+footer {
+  background: #19192e;
+  text-align: center;
+  padding: 18px;
+}
+
+@media (min-width: 600px) {
+  .games {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
